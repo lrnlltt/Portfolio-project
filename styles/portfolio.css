@@ -1,9 +1,44 @@
-h1 {
-  font-family: "Neuton", Serif;
-  font-size: 49px;
+:root {
+  --branding-color: #ff971d;
+  --secondary-color: #ffe8d6;
+  --heading-font-family: "Neuton", Serif;
+  --default-font-family: "Work Sans", Sans-Serif;
 }
 
+body {
+  background-color: #f9f6f7;
+}
+
+h2,
 p {
-  font-family: "Work Sans", Sans-Serif;
-  font-size: 16px;
+  font-family: var(--default-font-family);
+}
+
+a:hover {
+  cursor: pointer;
+  color: darkgray;
+  box-shadow: 0 .25rem .5rem rgba(0,0,0,.075);
+}
+
+
+.hero {
+  text-align: center;
+  margin: 80px 0px 80px 0px;
+}
+
+.hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+.button-branding {
+  display: inline-block;
+  background-color: var(--branding-color);
+  color: #ffffff;
+  padding: 20px 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
 }
