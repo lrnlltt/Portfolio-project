@@ -9,11 +9,16 @@ body {
   background-color: #f9f6f7;
 }
 
-h1, 
+h1,
 h2 {
   font-family: var(--heading-font-family);
   letter-spacing: 1.5px;
   font-size: 96px;
+}
+
+h4 {
+  font-size: 38px;
+  font-family: var(--heading-font-family);
 }
 
 p {
@@ -27,25 +32,23 @@ p {
 .nav-bar {
   display: flex;
   justify-content: flex-end;
-  padding-right: 30px; 
+  padding-right: 30px;
 }
 
 .nav-bar li {
-  padding-right: 10px; 
+  padding-right: 10px;
 }
 
 a:hover {
   cursor: pointer;
   color: darkgray;
-  box-shadow: 0 .25rem .5rem rgba(0,0,0,.075);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.075);
 }
-
 
 .hero {
   text-align: center;
   margin: 100px 0px 100px 0px;
 }
-
 
 .hero p {
   font-size: 28px;
@@ -72,17 +75,59 @@ a:hover {
   text-align: start;
 }
 
+.contact a {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+
+footer {
+  margin: 50px;
+}
+
+footer .contact-box {
+  padding: 30px 120px;
+}
+
+footer a {
+  font-family: var(--default-font-family);
+  text-decoration: none;
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+footer .social-links a:hover {
+  color: gray; 
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
   }
 
-  h2{
+  h2 {
     font-size: 44px;
-    padding: 10px
+    padding: 10px;
   }
 
   .container {
     text-align: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .nav-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .nav-bar a {
+    padding: 20px;
   }
 }
